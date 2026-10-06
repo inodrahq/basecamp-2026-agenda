@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Basecamp Planner</title>
+  <meta name="description" content="Build your own Sui Basecamp Singapore 2026 program: pick your interests, resolve clashes, know where to be.">
+  <meta name="theme-color" content="#0b1426">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <span class="drop" aria-hidden="true"></span>
+        <div>
+          <h1>Basecamp Planner</h1>
+          <p class="sub">Sui Basecamp · Singapore · Oct 7-8, 2026</p>
+        </div>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button data-tab="interests" role="tab">Interests</button>
+        <button data-tab="program" role="tab">My Program</button>
+        <button data-tab="browse" role="tab">All Sessions</button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="shared-banner" class="banner wrap" hidden></div>
+
+  <main class="wrap" id="main"></main>
+
+  <footer class="wrap foot">
+    <p>Unofficial planner. Data from <a href="https://www.sui.io/basecamp#agenda" target="_blank" rel="noopener">sui.io/basecamp</a>, last scraped <span id="scraped"></span>. All times are Singapore time (SGT). The schedule can change, so check the official agenda.</p>
+    <p class="powered">Powered by <a href="https://inodra.com/?utm_source=basecamp-planner&amp;utm_medium=referral&amp;utm_campaign=sui-basecamp-2026" target="_blank" rel="noopener">Inodra</a>. <span class="tagline">Sui RPC Provider &amp; Data Infrastructure</span></p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
